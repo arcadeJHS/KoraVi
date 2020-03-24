@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import 'sketched.scss';
+
+html, body {
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  color: #666;
+}
+canvas {
+  display: block;
+  border: 1px solid #eee;
+}
+.info-container {
+  top: 0;
+}
+.title {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 0.2rem 0.5rem;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+  background: #fff;
+  border: 1px solid #eee;
+  width: 8rem;
+}
+ul li {
+  line-height: 1.1rem;
+  font-size: 0.8rem;
+}
+ul li span {
+  font-weight: bold;
+  float: right;
+}
+ul li.healthy {
+  color: #13A537;
+}
+ul li.sick {
+  color: #ff0000;
+}
+ul li.recovered {
+  color: #0000ff;
+}
+ul li.you {
+  color: #FF9C2A;
+}
+ul li.you span {
+  color: #666;
+}

@@ -1,2 +1,6 @@
-# KoraVi
- A covid-19 spread simulator
+# KoraVi (koravi)
+
+A covid-19 spread simulator
+
+## Demo
+
