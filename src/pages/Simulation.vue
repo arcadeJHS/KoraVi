@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      population: 200,
+      population: 150,
       isolated: 0,
       persons: [],
       r0: null,
@@ -69,7 +69,7 @@ export default {
   methods: {
 
     setup(sketch) {
-        sketch.createCanvas(sketch.windowWidth/2, sketch.windowHeight/2);
+        sketch.createCanvas(window.innerWidth, window.innerHeight);
 
         // Surrounding healthy persons
         for (var i = 0; i < this.population; i++) {
@@ -143,7 +143,7 @@ export default {
       sketch.fill(sketch.color(255, 0, 0), 100);
 
       for (var i = 0; i < this.sickLines.length; i++) {
-        sketch.rect(this.sickLines[i][0], sketch.windowHeight/2 - this.sickLines[i][1]/2, 1, this.sickLines[i][1]);
+        sketch.rect(this.sickLines[i][0], window.innerHeight - this.sickLines[i][1]/2, 1, this.sickLines[i][1]);
       }
     },
 
@@ -159,7 +159,7 @@ export default {
       sketch.fill(sketch.color(0, 0, 255), 100);
 
       for (var i = 0; i < this.recoveredLines.length; i++) {
-        sketch.rect(this.recoveredLines[i][0], sketch.windowHeight/2 - this.recoveredLines[i][1]/2, 1, this.recoveredLines[i][1]);
+        sketch.rect(this.recoveredLines[i][0], window.innerHeight - this.recoveredLines[i][1]/2, 1, this.recoveredLines[i][1]);
       }
     },
 
@@ -177,7 +177,7 @@ export default {
       sketch.fill(sketch.color(0, 255, 0), 100);
 
       for (var i = 0; i < this.healthyLines.length; i++) {
-        sketch.rect(this.healthyLines[i][0], sketch.windowHeight/2 - this.healthyLines[i][1]/2, 1, this.healthyLines[i][1]);
+        sketch.rect(this.healthyLines[i][0], window.innerHeight - this.healthyLines[i][1]/2, 1, this.healthyLines[i][1]);
       }
     },
 
@@ -192,7 +192,7 @@ export default {
       sketch.fill(sketch.color(210, 210, 210), 100);
 
       for (var i = 0; i < this.populationLines.length; i++) {
-        sketch.rect(this.populationLines[i][0], sketch.windowHeight/2 - this.populationLines[i][1]/2, 1, this.populationLines[i][1]);
+        sketch.rect(this.populationLines[i][0], window.innerHeight - this.populationLines[i][1]/2, 1, this.populationLines[i][1]);
       }
     }
 

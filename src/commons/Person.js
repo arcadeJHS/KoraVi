@@ -9,7 +9,7 @@ export default class Person {
   constructor({ x, y, you, isSick, isolated, sketch }) {
     this.x = x;
     this.y = y;
-    this.r = you ? 5 : 3; // radius
+    this.r = you ? 8 : 5; // radius
     this.speedX = 1;
     this.speedY = 2;
     this.alive = true;
